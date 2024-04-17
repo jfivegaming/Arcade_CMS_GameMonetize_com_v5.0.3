@@ -1,0 +1,130 @@
+/*
+* GameMonetize.com - Copyright © 2021
+*
+*
+* @author GameMonetize.com
+*
+*/
+@media only screen and (max-device-width: 960px), only screen and (max-width: 960px) {
+    [class*="span"], [class^=span] {
+        width: 100% !important;
+    }
+    .game-content {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-device-width: 768px), only screen and (max-width: 768px) {
+    .gamemonetize-header .gamemonetize-logo img[logo] {
+        display: none !important;
+    }
+    .gamemonetize-header .gamemonetize-logo img[logo-responsive] {
+        display: inherit !important;
+    }
+    .gamemonetize-header .nav-menu {
+        display: inline-block !important;
+        cursor: pointer;
+    }
+    .gamemonetize-header .header-nav {
+        position: absolute;
+        top: 60px;
+        right: -600px !important;
+        display: inherit;
+        -webkit-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    .gamemonetize-header .header-nav.show-menu {
+        left: 0;
+        right: 0px !important;
+    }
+    .gamemonetize-header .header-nav ul {
+        background-color: #383e4d;
+    }
+    .gamemonetize-header .header-nav ul li {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    .gamemonetize-header .header-nav ul li {
+        float: none !important; 
+    }
+    .gamemonetize-header .header-nav ul li a[button1], .gamemonetize-header .header-nav ul li a[button2] {
+        border: none !important;
+        border-radius: 0 !important;
+        margin-left: 0 !important;
+    }
+    .gamemonetize-header .header-nav ul li span {
+        display: initial !important;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .ad-box {
+        overflow: hidden;
+    }
+    .widget {
+        border-radius: 0 !important;
+        border-left: 0;
+        border-right: 0;
+    }
+    .widget > .widget-header {
+        border-radius: 0 !important;
+    }
+}
+
+@media only screen and (max-device-width: 545px), only screen and (max-width: 545px) {
+    .gamemonetize-header .gamemonetize-search {
+        display: none !important;
+    }
+    #game-player {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        top: 0 !important;
+    }
+    .game-case {
+        text-align: inherit !important;
+    }
+    .info-self {
+        overflow: hidden;
+    }
+    .set-btn {
+        float: none !important;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .share-btn {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 5px !important;
+    }
+    .stats-box-container .stats-box, .box-m {
+        width: 100% !important;
+    }
+    .users-status-dashboard, .addgame-dashboard, .games-dashboard {
+        display: block !important;
+    }
+    .users-status-dashboard .last-users-container:first-child {
+        border-right: 0 !important;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .gamemonetize-game-featured ._content-title {
+        padding: 11px;
+        margin-bottom: 0 !important;
+    }
+    .gamemonetize-game-featured, .games-m-played {
+        padding: 0 !important;
+    }
+    .card-item {
+        width: 200px !important;
+    }
+    .card-game .g-media img {
+        height: 130px !important;
+        width: 200px !important;
+    }
+    .card-game .name {
+        font-size: 15px;
+        padding: 10px 0 0 12px !important;
+    }
+    .card-game .caption {
+        padding: 8px 10px !important;
+    }
+}

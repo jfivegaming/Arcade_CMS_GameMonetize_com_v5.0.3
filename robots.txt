@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /embed/*
+Allow: /sitemap.xml
+

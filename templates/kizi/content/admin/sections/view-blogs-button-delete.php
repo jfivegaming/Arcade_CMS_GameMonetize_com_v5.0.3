@@ -1,0 +1,1 @@
+<button id="mc-blog-delete" class="mc_d-{{VIEW_BLOG_ID}} btn-p btn-small btn-p3 fa fa-trash" data-blog="{{VIEW_BLOG_ID}}"></button>

@@ -1,0 +1,74 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^home(|/)$ index.php?p=home
+RewriteRule ^feed(|/)$ feed.php
+RewriteRule ^new-games(|/)$ index.php?p=new-games
+RewriteRule ^best-games(|/)$ index.php?p=best-games
+RewriteRule ^random(|/)$ index.php?p=random
+RewriteRule ^about(|/)$ index.php?p=about
+RewriteRule ^tags(|/)$ index.php?p=tags
+RewriteRule ^privacy(|/)$ index.php?p=privacy
+RewriteRule ^terms(|/)$ index.php?p=terms
+RewriteRule ^contact(|/)$ index.php?p=contact
+RewriteRule ^featured-games(|/)$ index.php?p=featured-games
+RewriteRule ^played-games(|/)$ index.php?p=played-games
+RewriteRule ^new-games(|/)$ index.php?p=new-games
+RewriteRule ^blogs(|/)$ index.php?p=blogs
+RewriteRule ^login(|/)$ index.php?p=login
+RewriteRule ^setting(|/)$ index.php?p=setting&section=info
+RewriteRule ^setting/avatar(|/)$ index.php?p=setting&section=avatar
+RewriteRule ^setting/password(|/)$ index.php?p=setting&section=password
+RewriteRule ^logout/(.*)$ index.php?p=logout&token=$1
+RewriteRule ^error(|/)$ index.php?p=error
+RewriteRule ^admin(|/)$ index.php?p=admin&section=global
+RewriteRule ^admin/addgame(|/)$ index.php?p=admin&section=addgame
+RewriteRule ^admin/setting(|/)$ index.php?p=admin&section=setting
+
+RewriteRule ^admin/games(|/)$ index.php?p=admin&section=games
+RewriteRule ^admin/games/edit/(.*)$ index.php?p=admin&section=games&action=edit&gid=$1
+RewriteRule ^admin/games/(.*)$ index.php?p=admin&section=games&page=$1
+
+RewriteRule ^admin/categories(|/)$ index.php?p=admin&section=categories
+RewriteRule ^admin/categories/add(|/)$ index.php?p=admin&section=categories&action=add
+RewriteRule ^admin/blogs(|/)$ index.php?p=admin&section=blogs
+RewriteRule ^admin/blogs/add(|/)$ index.php?p=admin&section=blogs&action=add
+RewriteRule ^admin/tags(|/)$ index.php?p=admin&section=tags
+RewriteRule ^admin/tags/add(|/)$ index.php?p=admin&section=tags&action=add
+RewriteRule ^admin/footerdescription(|/)$ index.php?p=admin&section=footerdescription
+RewriteRule ^admin/users(|/)$ index.php?p=admin&section=users
+RewriteRule ^admin/ads(|/)$ index.php?p=admin&section=ads
+RewriteRule ^admin/adstxt(|/)$ index.php?p=admin&section=adstxt
+RewriteRule ^login/url/(.*)$ index.php?p=login&redirect_url=$1
+RewriteRule ^category/(.*)$ index.php?p=categories&category=$1
+RewriteRule ^blog/(.*)$ index.php?p=blogs&blog=$1
+
+RewriteRule ^categories(|/)$ index.php?p=categories
+RewriteRule ^tag/(.*)$ index.php?p=tagspage&tag=$1
+RewriteRule ^home/(.*)$ index.php?lang=$1
+RewriteRule ^profile/(.*)$ index.php?p=profile&id=$1
+RewriteRule ^game/(.*)$ index.php?p=play&id=$1
+RewriteRule ^search/(.*)$ index.php?p=search&q=$1
+RewriteRule ^admin/users/edit/(.*)$ index.php?p=admin&section=users&action=edit&uid=$1
+RewriteRule ^admin/categories/edit/(.*)$ index.php?p=admin&section=categories&action=edit&cid=$1
+RewriteRule ^admin/blogs/edit/(.*)$ index.php?p=admin&section=blogs&action=edit&cid=$1
+RewriteRule ^admin/tags/edit/(.*)$ index.php?p=admin&section=tags&action=edit&cid=$1
+RewriteRule ^admin/footerdescription/edit/(.*)$ index.php?p=admin&section=footerdescription&action=edit&cid=$1
+
+## API
+RewriteRule ^api/v1/sandbox/game/(.*)$ gm-api.php?l=game-sandbox&gid=$1
+
+ErrorDocument 404 /index.php?p=error
+
+</IfModule>
+
+Options -Indexes
+IndexIgnore *

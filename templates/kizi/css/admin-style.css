@@ -1,0 +1,59 @@
+/*
+* GameMonetize.com - Copyright © 2021
+*
+*
+* @author GameMonetize.com
+*
+*/
+
+/* Color */
+.style-1 { /*blue*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #3CA7FD 0%, #03508E 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #3CA7FD 0%, #03508E 100%);
+}
+
+.style-2 { /*green*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #3FCA44 0%, #006505 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #3FCA44 0%, #006505 100%);
+}
+
+.style-3 { /*magenta*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #F283FF 0%, #680069 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #F283FF 0%, #680069 100%);
+}
+
+.style-4 { /*orange*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #FFBA55 0%, #FF6636 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #FFBA55 0%, #FF6636 100%);
+}
+
+.style-5 { /*red*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #FF827A 0%, #AB0C01 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #FF827A 0%, #AB0C01 100%);
+}
+
+.style-6 { /*purple*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #A979FF 0%, #4A248E 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #A979FF 0%, #4A248E 100%);
+}
+
+.style-7 { /*aqua*/
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #00FBFB 0%, #00A5A5 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #00FBFB 0%, #00A5A5 100%);
+}
+
+/* Image */
+.style-1-image { /*blue*/
+    background: #2196F3 url('../image/style/bg-page-section.png');
+    background-size: 35% auto;
+}
+
+.style-2-image { /*pink*/
+    background: #FF8CE5 url('../image/style/bg-page-section.png');
+    background-size: 35% auto;
+}
+
+.style-3-image { /*green*/
+    background: #8BC34A url('../image/style/bg-page-section.png');
+    background-size: 35% auto;
+}

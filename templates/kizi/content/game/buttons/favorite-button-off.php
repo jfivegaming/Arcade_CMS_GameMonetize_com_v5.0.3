@@ -1,0 +1,1 @@
+<button class="top-gm-btn fav-status-button fa fa-star" data-href="{{CONFIG_SITE_URL}}/login/url/play/{{PLAY_GAME_ID}}"></button>

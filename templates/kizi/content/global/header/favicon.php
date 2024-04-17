@@ -1,0 +1,1 @@
+<link rel="shortcut icon" href="{{CONFIG_SITE_URL}}/favicon.ico">
